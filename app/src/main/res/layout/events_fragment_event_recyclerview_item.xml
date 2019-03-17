@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <TextView
+        android:id="@+id/event_textView"
+        style="@style/word_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/holo_orange_light" />
+</LinearLayout>-->
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="8dp">
+
+    <android.support.design.card.MaterialCardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="8dp"
+        app:cardElevation="0dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp">
+
+        <android.support.constraint.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="4dp"
+            android:paddingBottom="4dp">
+
+            <android.support.constraint.Guideline
+                android:id="@+id/guideline"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                app:layout_constraintGuide_percent=".8" />
+
+            <TextView
+                android:id="@+id/events_fragment_recyclerview_item_title"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                app:layout_constraintEnd_toStartOf="@+id/guideline"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                android:fontFamily="@font/roboto_light"
+                android:textSize="18sp"
+                tools:text="Practice at Josh's Apartment" />
+
+            <TextView
+                android:id="@+id/events_fragment_recyclerview_item_description"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="6dp"
+                android:layout_marginEnd="8dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                android:fontFamily="@font/roboto_light"
+                android:textSize="14sp"
+                tools:text="This is a test description just to see how everything looks on this end. I think this is gonna end up damn nice!"
+                app:layout_constraintStart_toStartOf="@+id/events_fragment_recyclerview_item_title"
+                app:layout_constraintTop_toBottomOf="@+id/events_fragment_recyclerview_item_title" />
+
+            <TextView
+                android:id="@+id/events_fragment_recyclerview_item_location"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:layout_marginEnd="8dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                android:fontFamily="@font/roboto_light"
+                android:textSize="14sp"
+                tools:text="1124 Town Place, Middletown, CT 06457"
+                app:layout_constraintStart_toStartOf="@+id/events_fragment_recyclerview_item_description"
+                app:layout_constraintTop_toBottomOf="@+id/events_fragment_recyclerview_item_description" />
+
+            <View
+                android:id="@+id/divider_view_top"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="4dp"
+                android:background="@color/touch_guard_drawable"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/events_fragment_recyclerview_item_location" />
+
+            <TextView
+                android:id="@+id/events_fragment_recyclerview_item_date_time"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:fontFamily="@font/roboto_light"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/divider_view_top"
+                tools:text="Dec. 28th, 2018 @ 9pm" />
+
+            <View
+                android:id="@+id/divider_view_bottom"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="8dp"
+                android:background="@color/touch_guard_drawable"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/events_fragment_recyclerview_item_date_time" />
+
+            <TextView
+                android:clickable="true"
+                android:id="@+id/events_fragment_recyclerview_item_manage_event"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:drawableStart="@drawable/ic_fab_event_base_red"
+                android:drawablePadding="8dp"
+                android:fontFamily="@font/roboto"
+                android:gravity="center_vertical"
+                android:textColor="@color/base_red_color"
+                android:textSize="16sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/divider_view_bottom"
+                android:text="Manage" />
+
+        </android.support.constraint.ConstraintLayout>
+
+    </android.support.design.card.MaterialCardView>
+
+</android.support.constraint.ConstraintLayout>

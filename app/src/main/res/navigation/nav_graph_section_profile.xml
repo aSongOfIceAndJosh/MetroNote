@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            app:startDestination="@id/profileFragment">
+
+    <fragment
+        android:id="@+id/profileFragment"
+        android:name="com.android.joshuamarotta.metronote.fragments.ProfileFragment"
+        android:label="ProfileFragment">
+        <action
+            android:id="@+id/action_profileFragment_to_eventsFragment"
+            app:destination="@id/eventsFragment"
+            app:enterAnim="@anim/nav_default_enter_anim"
+            app:exitAnim="@anim/right_slide_out"
+            app:popExitAnim="@anim/right_slide_out"
+            app:popUpTo="@id/profileFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/eventsFragment"
+        android:name="com.android.joshuamarotta.metronote.fragments.EventsFragment"
+        android:label="EventsFragment">
+        <action
+            android:id="@+id/action_eventsFragment_to_manageEventFragment"
+            app:destination="@id/manageEventFragment"
+            app:enterAnim="@anim/nav_default_enter_anim"
+            app:exitAnim="@anim/right_slide_out"
+            app:popExitAnim="@anim/right_slide_out"
+            app:popUpTo="@id/eventsFragment"/>
+        <argument
+            android:name="viewPagerTabToLaunch"
+            android:defaultValue="0"
+            app:argType="integer" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/manageEventFragment"
+        android:name="com.android.joshuamarotta.metronote.fragments.ManageEventFragment"
+        android:label="ManageEventFragment">
+    </fragment>
+
+</navigation>

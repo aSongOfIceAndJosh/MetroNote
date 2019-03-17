@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#212121</color>
+    <color name="colorPrimaryDark">#000000</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="base_background_color">#E0E0E0</color>
+
+
+    <color name="yellow">#F6A623</color>
+
+    <color name="violet">#673AB7</color>
+    <color name="violet_trans_80">#BF673AB7</color>
+
+
+    <color name="orange">#F07B3F</color>
+
+    <color name="grey">#949494</color>
+    <color name="red">#FE3824</color>
+    <color name="red_logout">#E95354</color>
+
+    <color name="white">#FFFFFF</color>
+    <color name="white_transparent_80">#BFFFFFFF</color>
+
+    <color name="primary_text">#212121</color>
+    <color name="secondary_text">#727272</color>
+    <color name="chrome_grey">#F2F2F2</color>
+    <color name="txt_profile">#2C4058</color>
+
+
+    <!--shimmer-->
+    <color name="demo_light_transparent">#16000000</color>
+    <color name="demo_dark_transparent">#24000000</color>
+
+
+
+    <color name="black">#000000</color>
+
+    <color name="black_25_transparent">#40000000</color>
+
+    <color name="transparent">#00000000</color>
+
+
+    <color name="grey_trans">#c7c7c7</color>
+
+
+    <color name="green">#70c050</color>
+
+
+    <!--Toolbar-->
+    <color name ="toolbar_main_color">#212121</color>
+
+    <!--Top View Item-->
+    <color name="top_view_divider_line_color">#66424242</color>
+    <color name="top_view_header_background_color">#424242</color>
+
+    <!-- Base Red Color - same as launcher -->
+    <color name="base_red_color">#C41200</color>
+
+    <!-- FAB -->
+    <color name="fab_background_and_text_color">#e53935</color>
+    <color name="touch_guard_drawable">#99000000</color>
+
+</resources>

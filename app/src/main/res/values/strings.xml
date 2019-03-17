@@ -1,0 +1,52 @@
+<resources>
+    <string name="app_name">MetroNote</string>
+    <string name="home">Home</string>
+
+
+    <string name="title_activity_preferences">Settings</string>
+
+    <!--Fragment Toolbar Titles-->
+    <string name="title_home_fragment">MetroNote</string>
+    <string name="title_two_fragment">Explore</string>
+    <string name="title_profile_fragment">Profile</string>
+    <string name="recycler_view_home_item_top_header_upcoming">Upcoming Events</string>
+    <string name="recycler_view_home_item_top_upcoming_performance_header_performance">Performance</string>
+    <string name="recycler_view_home_item_top_upcoming_performance_header_practice">Practice</string>
+    <string name="recycler_view_home_item_top_view_all">VIEW ALL</string>
+    <string name="title_activity_create_event">Add Event</string>
+
+    <!-- Login Activity-->
+    <string name="login_activity_email">Email</string>
+    <string name="login_activity_password">Password</string>
+    <string name="login_activity_login">LOGIN</string>
+    <string name="login_activity_create_account">Create Account!</string>
+    <string name="login_activity_forgot_password">Forgot password? Reset it!</string>
+
+    <!--Create User Activity -->
+    <string name="title_activity_create_user">Sign Up</string>
+    <string name="create_user_activity_password">Password</string>
+    <string name="create_user_activity_create_user">SIGN UP AND LOGIN</string>
+    <string name="create_user_activity_email">Email</string>
+    <string name="create_your_account">CREATE ACCOUNT</string>
+
+    <!-- Create Event Activity -->
+    <string name="create_event_title">Title</string>
+    <string name="create_event_description">Description</string>
+    <string name="create_event_schedule">Schedule</string>
+    <string name="create_event_add_button">ADD</string>
+
+    <!-- Manage Event Fragment -->
+    <string name="manage_event_update_button">UPDATE</string>
+
+    <!-- Reset Password Activity -->
+    <string name="reset_password_title">PASSWORD RESET</string>
+
+    <!-- Profile Fragment-->
+    <string name="profile_fragment_edit_profile">Edit Profile</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="no_performances_booked">NO PERFORMANCES BOOKED</string>
+    <string name="no_practices_booked">NO PRACTICES BOOKED</string>
+
+</resources>

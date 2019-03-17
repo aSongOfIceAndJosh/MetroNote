@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "418594223004",
+    "firebase_url": "https://metronote-a8444.firebaseio.com",
+    "project_id": "metronote-a8444",
+    "storage_bucket": "metronote-a8444.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:418594223004:android:c475ef8ddc6c5e86",
+        "android_client_info": {
+          "package_name": "com.android.joshuamarotta.metronote"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "418594223004-k4d0aml276logi18g3qtligfseu4ngi2.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDIUVyCN6h6sf3CqebwYCGnsJ1qv0CO0y0"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

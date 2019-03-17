@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+     xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+     android:layout_height="match_parent"
+     android:background="#ef5350">
+
+    <android.support.constraint.Guideline
+        android:id="@+id/guideline5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_begin="126dp"
+        app:layout_constraintGuide_percent=".3" />
+
+    <studio.carbonylgroup.textfieldboxes.TextFieldBoxes
+        android:id="@+id/login_activity_email"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        app:hasClearButton="false"
+        app:counterTextColor="@android:color/white"
+        app:helperTextColor="@android:color/white"
+        app:secondaryColor="@android:color/white"
+        app:labelText="@string/login_activity_email"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/guideline5"
+        app:panelBackgroundColor="@android:color/transparent"
+        app:primaryColor="@android:color/white">
+
+        <studio.carbonylgroup.textfieldboxes.ExtendedEditText
+            android:id="@+id/login_activity_email_editText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:inputType="textEmailAddress"
+            android:maxLines="1"
+            android:textCursorDrawable="@null"
+            android:textColor="@android:color/white"/>
+    </studio.carbonylgroup.textfieldboxes.TextFieldBoxes>
+
+    <studio.carbonylgroup.textfieldboxes.TextFieldBoxes
+        android:id="@+id/login_activity_password"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="20dp"
+        app:hasClearButton="false"
+        app:labelText="@string/login_activity_password"
+        app:layout_constraintEnd_toEndOf="@+id/login_activity_email"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/login_activity_email"
+        app:layout_constraintTop_toBottomOf="@+id/login_activity_email"
+        app:panelBackgroundColor="@android:color/transparent"
+        app:primaryColor="@android:color/white"
+        app:secondaryColor="@android:color/white">
+
+        <studio.carbonylgroup.textfieldboxes.ExtendedEditText
+            android:id="@+id/login_activity_password_edit_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:inputType="textPassword"
+            android:textCursorDrawable="@null"
+            android:maxLines="1"
+            android:textColor="@android:color/white" />
+    </studio.carbonylgroup.textfieldboxes.TextFieldBoxes>
+
+    <Button
+        android:id="@+id/login_activity_login_button"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="24dp"
+        android:background="@drawable/create_event_add_button_border"
+        android:clickable="true"
+        android:fontFamily="@font/roboto_medium"
+        android:foreground="?attr/selectableItemBackground"
+        android:stateListAnimator="@null"
+        android:text="@string/login_activity_login"
+        android:textColor="@android:color/white"
+        app:layout_constraintBottom_toTopOf="@+id/login_activity_create_account_edit_text"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/login_activity_create_account_edit_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:clickable="true"
+        android:text="@string/login_activity_create_account"
+        android:textColor="@android:color/white"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toTopOf="@+id/login_activity_forgot_password_edit_text"
+        app:layout_constraintEnd_toEndOf="@+id/login_activity_login_button"
+        app:layout_constraintStart_toStartOf="@+id/login_activity_login_button" />
+
+
+    <TextView
+        android:id="@+id/login_activity_forgot_password_edit_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="40dp"
+        android:clickable="true"
+        android:text="@string/login_activity_forgot_password"
+        android:textColor="@android:color/white"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/login_activity_create_account_edit_text"
+        app:layout_constraintStart_toStartOf="@+id/login_activity_create_account_edit_text" />
+
+    <com.victor.loading.rotate.RotateLoading
+        android:id="@+id/rotateloading_login"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_gravity="center"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="8dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:loading_color="@android:color/white"
+        app:loading_width="5dp" />
+
+    <TextView
+        android:id="@+id/activity_login_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="64dp"
+        android:fontFamily="@font/roboto_light"
+        android:text="@string/app_name"
+        android:textColor="@android:color/white"
+        android:textSize="50sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+</android.support.constraint.ConstraintLayout>
