@@ -1448,6 +1448,7 @@ drawable fui_idp_button_background_phone
 drawable fui_idp_button_background_twitter
 drawable googleg_disabled_color_18
 drawable googleg_standard_color_18
+drawable ic_add_black_24dp
 drawable ic_add_black_48dp_00
 drawable ic_add_black_48dp_01
 drawable ic_add_black_48dp_02

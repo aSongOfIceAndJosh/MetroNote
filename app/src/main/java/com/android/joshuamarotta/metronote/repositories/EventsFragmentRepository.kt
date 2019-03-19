@@ -11,7 +11,6 @@ class EventsFragmentRepository {
 
     init {
         viewPagerFragments = MutableLiveData<List<Fragment>>()
-        //TODO - make transaction fragment here!
         viewPagerFragments.value = listOf(
             PerformanceEventsFragment(),
             PracticeEventsFragment(),

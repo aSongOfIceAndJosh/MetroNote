@@ -2,6 +2,7 @@ package com.android.joshuamarotta.metronote.repositories
 
 import android.arch.lifecycle.LiveData
 import android.arch.lifecycle.MutableLiveData
+import android.util.Log
 import com.android.joshuamarotta.metronote.models.*
 import com.google.firebase.storage.FirebaseStorage
 import io.reactivex.Single
@@ -28,6 +29,10 @@ class BigThreeRepository {
                         BigThreeModel(bigThreeTitles[1], it),
                         BigThreeModel(bigThreeTitles[2], it)
                     )
+                }
+
+                it.addOnFailureListener {
+                    Log.d("FAILURE", "FAILURE")
                 }
             }
     }

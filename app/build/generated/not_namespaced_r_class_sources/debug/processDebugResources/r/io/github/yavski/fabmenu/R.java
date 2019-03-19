@@ -622,17 +622,17 @@ public final class R {
         public static final int design_fab_background = 0x7f080075;
         public static final int design_snackbar_background = 0x7f080079;
         public static final int fab_add_clear_selector = 0x7f08007a;
-        public static final int ic_add_black_48dp_00 = 0x7f080089;
-        public static final int ic_add_black_48dp_01 = 0x7f08008a;
-        public static final int ic_add_black_48dp_02 = 0x7f08008b;
-        public static final int ic_add_black_48dp_03 = 0x7f08008c;
-        public static final int ic_add_black_48dp_04 = 0x7f08008d;
-        public static final int ic_add_black_48dp_05 = 0x7f08008e;
-        public static final int ic_add_black_48dp_06 = 0x7f08008f;
-        public static final int ic_add_black_48dp_07 = 0x7f080090;
-        public static final int ic_add_black_48dp_08 = 0x7f080091;
-        public static final int ic_add_black_48dp_09 = 0x7f080092;
-        public static final int notification_template_icon_bg = 0x7f0800c5;
+        public static final int ic_add_black_48dp_00 = 0x7f08008a;
+        public static final int ic_add_black_48dp_01 = 0x7f08008b;
+        public static final int ic_add_black_48dp_02 = 0x7f08008c;
+        public static final int ic_add_black_48dp_03 = 0x7f08008d;
+        public static final int ic_add_black_48dp_04 = 0x7f08008e;
+        public static final int ic_add_black_48dp_05 = 0x7f08008f;
+        public static final int ic_add_black_48dp_06 = 0x7f080090;
+        public static final int ic_add_black_48dp_07 = 0x7f080091;
+        public static final int ic_add_black_48dp_08 = 0x7f080092;
+        public static final int ic_add_black_48dp_09 = 0x7f080093;
+        public static final int notification_template_icon_bg = 0x7f0800c6;
     }
     public static final class id {
         private id() {}

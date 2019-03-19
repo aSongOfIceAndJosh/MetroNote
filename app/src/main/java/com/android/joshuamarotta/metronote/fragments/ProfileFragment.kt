@@ -52,7 +52,10 @@ class ProfileFragment : Fragment(), OnReselectedDelegate {
         profileFragmentViewModel = ViewModelProviders.of(this).get(ProfileViewModel::class.java)
         profileFragmentViewModel.bigThreeProperties.observe(
             this,
-            Observer { bigThreeProperties -> bigThreeProperties?.let { adapter?.setBigThreeProperties(it) } })
+            Observer { bigThreeProperties ->
+                bigThreeProperties?.let { adapter?.setBigThreeProperties(it)
+                }
+            })
     }
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {

@@ -30,7 +30,7 @@ class PerformanceEventsFragment : Fragment(), EventListAdapter.EventFragmentMana
     private lateinit var eventViewModel: EventViewModel
 
     private lateinit var recyclerView: RecyclerView
-    private lateinit var horizontalCalendar: HorizontalCalendar
+    //private lateinit var horizontalCalendar: HorizontalCalendar
     private var adapter: EventListAdapter? = null
     private lateinit var rootView: View
 
@@ -39,11 +39,6 @@ class PerformanceEventsFragment : Fragment(), EventListAdapter.EventFragmentMana
         recyclerView = rootView.fragment_performances_events_recyclerview
         adapter = context?.let { EventListAdapter(it) }
         adapter?.setEventFragmentManageEventCallback(this)
-
-
-
-
-
         return rootView
     }
 
@@ -55,12 +50,12 @@ class PerformanceEventsFragment : Fragment(), EventListAdapter.EventFragmentMana
         eventViewModel.dateTimeSortedPerformances.observe(this, Observer { events -> events?.let { adapter?.setEvents(it) } })
         eventViewModel.dateTimeSortedEvents.observe(this, Observer { eventViewModel.processSortedEventsToSortedMap() })
 
-        eventViewModel.dateTimeSortedEventsMap.observe(this, Observer { it?.let { map -> buildHorizontalCalendar(map) } })
+       // eventViewModel.dateTimeSortedEventsMap.observe(this, Observer { it?.let { map -> buildHorizontalCalendar(map) } })
 
         //TODO perhaps observe the events map here and update the horizontal calendar?
     }
 
-    private fun buildHorizontalCalendar(dateTimeSortedEventsMap: Map<String, List<EventRoomModel>>) {
+    /*private fun buildHorizontalCalendar(dateTimeSortedEventsMap: Map<String, List<EventRoomModel>>) {
         val startDate = Calendar.getInstance()
         startDate.add(Calendar.MONTH, -1)
         val endDate = Calendar.getInstance()
@@ -73,7 +68,7 @@ class PerformanceEventsFragment : Fragment(), EventListAdapter.EventFragmentMana
                 mutableListOf(CalendarEvent(Color.WHITE, "TEST"))
             }
             .build()
-    }
+    }*/
 
     override fun onDestroy() {
         super.onDestroy()

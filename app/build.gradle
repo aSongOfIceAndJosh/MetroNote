@@ -73,6 +73,10 @@ dependencies {
     implementation "android.arch.navigation:navigation-fragment-ktx:1.0.0-beta02"
     implementation "android.arch.navigation:navigation-ui-ktx:1.0.0-beta02"
 
+    //Shortbread
+    implementation 'com.github.matthiasrobbers:shortbread:1.0.2'
+    kapt 'com.github.matthiasrobbers:shortbread-compiler:1.0.2'
+
     // Room components
     implementation "android.arch.persistence.room:runtime:$rootProject.roomVersion"
     kapt "android.arch.persistence.room:compiler:$rootProject.roomVersion"

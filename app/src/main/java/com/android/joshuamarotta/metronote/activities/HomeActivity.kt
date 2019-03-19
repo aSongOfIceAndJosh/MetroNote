@@ -34,6 +34,7 @@ import dagger.android.DispatchingAndroidInjector
 import dagger.android.HasActivityInjector
 import dagger.android.support.DaggerAppCompatActivity
 import dagger.android.support.HasSupportFragmentInjector
+import shortbread.Shortcut
 import javax.inject.Inject
 
 class HomeActivity : AppCompatActivity(), CreateEventFragment.CreateEventCallback {
@@ -78,18 +79,25 @@ class HomeActivity : AppCompatActivity(), CreateEventFragment.CreateEventCallbac
                 return true
             }
             override fun onMenuClosed() { shadowView.visibility = GONE }
+
+
             override fun onMenuItemSelected(menuItem: MenuItem?): Boolean {
                 when(menuItem?.itemId) {
                     R.id.fab_add_event -> {
-                        navHomeController.navigate(R.id.action_homeFragment_to_createEventFragment)
-                        closeAndHideFloatingActionButton()
-                        return false
+                        return transactCreateEventFragment()
                     }
                     R.id.fab3 -> { return false }
                 }
                 return false
             }
         })
+    }
+
+    @Shortcut(id = "createEvent", icon = R.drawable.ic_add_black_24dp, shortLabel = "Create Event")
+    fun transactCreateEventFragment(): Boolean {
+        navHomeController.navigate(R.id.action_homeFragment_to_createEventFragment)
+        closeAndHideFloatingActionButton()
+        return false
     }
 
     private fun navigateUp() {

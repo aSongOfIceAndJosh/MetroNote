@@ -27,18 +27,9 @@ abstract class EventRoomDatabase : RoomDatabase() {
                     "event_database"
                 )
                     .fallbackToDestructiveMigration()
-                    .addCallback(EventDatabaseCallback(scope))
                     .build()
                 INSTANCE = instance
                 instance
-            }
-        }
-
-        private class EventDatabaseCallback(private val scope: CoroutineScope): RoomDatabase.Callback() {
-            override fun onOpen(db: SupportSQLiteDatabase) {
-                super.onOpen(db)
-                //TODO _ COMMENT THIS OUT TO KEEP ROOM DATABASE DATA THROUGH APP RESTARTS! UNCOMMENT TO CLEAR ALL DATA
-                //INSTANCE?.let { database -> scope.launch(Dispatchers.IO) { populateDatabase(database.eventDao()) } }
             }
         }
     }

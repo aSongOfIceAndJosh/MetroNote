@@ -7,21 +7,21 @@ import android.util.Log
 import com.google.firebase.auth.FirebaseAuth
 
 class LaunchActivity : AppCompatActivity() {
-    private lateinit var mAuth: FirebaseAuth
+   // private lateinit var mAuth: FirebaseAuth
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         Log.d("ONCREATE1", "CALLED")
 
-        mAuth = FirebaseAuth.getInstance()
-        if (mAuth.currentUser != null) {
+        //mAuth = FirebaseAuth.getInstance()
+        //if (mAuth.currentUser != null) {
             //User is signed in
             startActivity(Intent(this, HomeActivity::class.java))
             finish()
-        } else {
-            startActivity(Intent(this, LoginActivity::class.java))
-            finish()
-        }
+        //} else {
+         //   startActivity(Intent(this, LoginActivity::class.java))
+         //   finish()
+       // }
     }
 
     override fun onBackPressed() {

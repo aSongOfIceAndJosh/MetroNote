@@ -33,9 +33,11 @@ import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.firestore.FirebaseFirestore
 import kotlinx.android.synthetic.main.fragment_create_event.*
 import kotlinx.android.synthetic.main.fragment_create_event.view.*
+import shortbread.Shortcut
 import java.text.SimpleDateFormat
 import java.util.*
 
+//@Shortcut(id = "test", icon = R.drawable.ic_create_event_location, shortLabel = "Add Event",  activity = HomeActivity::class)
 class CreateEventFragment : Fragment(), OnReselectedDelegate, OnBackPressedListener {
 
     private val db = FirebaseFirestore.getInstance()
