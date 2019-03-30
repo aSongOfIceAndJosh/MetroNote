@@ -2,8 +2,6 @@ package com.android.joshuamarotta.metronote.fragments
 
 
 import android.arch.lifecycle.Observer
-import android.arch.lifecycle.ViewModelProviders
-import android.graphics.Color
 import android.os.Bundle
 import android.support.design.widget.TabLayout
 import android.support.v4.app.Fragment
@@ -20,10 +18,11 @@ import com.android.joshuamarotta.metronote.Utils.KotlinUtils.setupActionBar
 import com.android.joshuamarotta.metronote.adapters.EventsFragmentPagerAdapter
 import com.android.joshuamarotta.metronote.interfaces.OnReselectedDelegate
 import com.android.joshuamarotta.metronote.viewmodels.EventsFragmentViewModel
+import org.koin.android.viewmodel.ext.android.viewModel
 
 class EventsFragment : Fragment(), OnReselectedDelegate {
 
-    private lateinit var eventsFragmentViewModel: EventsFragmentViewModel
+    private val eventsFragmentViewModel: EventsFragmentViewModel by viewModel()
 
     private lateinit var viewPager: ViewPager
     private lateinit var tabLayout: TabLayout
@@ -42,7 +41,6 @@ class EventsFragment : Fragment(), OnReselectedDelegate {
         super.onActivityCreated(savedInstanceState)
 
         tabLayout.apply {
-            //tabMode = TabLayout.MODE_FIXED
             tabTextColors = context.getColorStateList(R.color.white)
             setupWithViewPager(viewPager, true)
         }
@@ -66,7 +64,6 @@ class EventsFragment : Fragment(), OnReselectedDelegate {
             })
         }
 
-        eventsFragmentViewModel = ViewModelProviders.of(this).get(EventsFragmentViewModel::class.java)
         eventsFragmentViewModel.viewPagerFragments.observe(this, Observer { viewPagerFragments -> viewPagerAdapter.addFragments(viewPagerFragments) })
     }
 

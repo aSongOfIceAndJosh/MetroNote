@@ -38,23 +38,6 @@
                     }
                 },
                 {
-                    "source": "/Users/joshuamarotta/.gradle/caches/transforms-1/files-1.1/navigation-ui-1.0.0-beta02.aar/f3fd100a0d65771ca3dec27cd8168c0b/res/values-is/values-is.xml",
-                    "from": {
-                        "startLines": "2,3",
-                        "startColumns": "4,4",
-                        "startOffsets": "55,158",
-                        "endColumns": "102,113",
-                        "endOffsets": "153,267"
-                    },
-                    "to": {
-                        "startLines": "48,49",
-                        "startColumns": "4,4",
-                        "startOffsets": "5508,5611",
-                        "endColumns": "102,113",
-                        "endOffsets": "5606,5720"
-                    }
-                },
-                {
                     "source": "/Users/joshuamarotta/.gradle/caches/transforms-1/files-1.1/preference-v7-28.0.0.aar/ce9d37244dd1885f718d8b5782d19fc6/res/values-is/values-is.xml",
                     "from": {
                         "startLines": "2,3,4,5",
@@ -89,7 +72,7 @@
                     }
                 },
                 {
-                    "source": "/Users/joshuamarotta/.gradle/caches/transforms-1/files-1.1/play-services-basement-16.1.0.aar/46a204ffb196db02a4c216df42537b8f/res/values-is/values.xml",
+                    "source": "/Users/joshuamarotta/.gradle/caches/transforms-1/files-1.1/play-services-basement-16.2.0.aar/72beca3344fa701cfbaecb6ad246cd6b/res/values-is/values.xml",
                     "from": {
                         "startLines": "4",
                         "startColumns": "0",
@@ -103,6 +86,23 @@
                         "startOffsets": "3916",
                         "endColumns": "187",
                         "endOffsets": "4099"
+                    }
+                },
+                {
+                    "source": "/Users/joshuamarotta/.gradle/caches/transforms-1/files-1.1/navigation-ui-1.0.0.aar/d7c8007c159207c0515dbf5a3f78db00/res/values-is/values-is.xml",
+                    "from": {
+                        "startLines": "2,3",
+                        "startColumns": "4,4",
+                        "startOffsets": "55,158",
+                        "endColumns": "102,113",
+                        "endOffsets": "153,267"
+                    },
+                    "to": {
+                        "startLines": "48,49",
+                        "startColumns": "4,4",
+                        "startOffsets": "5508,5611",
+                        "endColumns": "102,113",
+                        "endOffsets": "5606,5720"
                     }
                 }
             ]

@@ -45,14 +45,14 @@ public final class R {
         private id() {}
 
         public static final int fill_parent = 0x7f0a009c;
-        public static final int match_parent = 0x7f0a00ec;
-        public static final int tv_tinted_spinner = 0x7f0a01b5;
-        public static final int wrap_content = 0x7f0a01c3;
+        public static final int match_parent = 0x7f0a00ea;
+        public static final int tv_tinted_spinner = 0x7f0a01b1;
+        public static final int wrap_content = 0x7f0a01bf;
     }
     public static final class layout {
         private layout() {}
 
-        public static final int ms__list_item = 0x7f0d0069;
+        public static final int ms__list_item = 0x7f0d0068;
     }
     public static final class styleable {
         private styleable() {}

@@ -4,41 +4,7 @@
             "outputFile": "/Users/joshuamarotta/Github/Android Projects/MetroNote/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-pt-rBR/values-pt-rBR.xml",
             "map": [
                 {
-                    "source": "/Users/joshuamarotta/.gradle/caches/transforms-1/files-1.1/play-services-basement-16.1.0.aar/46a204ffb196db02a4c216df42537b8f/res/values-pt-rBR/values.xml",
-                    "from": {
-                        "startLines": "4",
-                        "startColumns": "0",
-                        "startOffsets": "251",
-                        "endColumns": "203",
-                        "endOffsets": "454"
-                    },
-                    "to": {
-                        "startLines": "39",
-                        "startColumns": "4",
-                        "startOffsets": "4377",
-                        "endColumns": "203",
-                        "endOffsets": "4576"
-                    }
-                },
-                {
-                    "source": "/Users/joshuamarotta/.gradle/caches/transforms-1/files-1.1/MaterialAbout-0.2.3.aar/edb171a4bab313efc668de6e2463cafe/res/values-pt-rBR/values-pt-rBR.xml",
-                    "from": {
-                        "startLines": "2,3,4,5,6,7,8,9,10,11,12,13,14,15,16",
-                        "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",
-                        "startOffsets": "55,119,176,217,256,316,355,422,492,552,627,683,749,813,859",
-                        "endColumns": "63,56,40,38,59,38,66,69,59,74,55,65,63,45,40",
-                        "endOffsets": "114,171,212,251,311,350,417,487,547,622,678,744,808,854,895"
-                    },
-                    "to": {
-                        "startLines": "30,49,50,51,53,125,126,127,130,131,132,134,137,140,141",
-                        "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",
-                        "startOffsets": "3143,5958,6015,6056,6182,12210,12249,12316,12618,12678,12753,12894,13230,13462,13508",
-                        "endColumns": "63,56,40,38,59,38,66,69,59,74,55,65,63,45,40",
-                        "endOffsets": "3202,6010,6051,6090,6237,12244,12311,12381,12673,12748,12804,12955,13289,13503,13544"
-                    }
-                },
-                {
-                    "source": "/Users/joshuamarotta/.gradle/caches/transforms-1/files-1.1/navigation-ui-1.0.0-beta02.aar/f3fd100a0d65771ca3dec27cd8168c0b/res/values-pt-rBR/values-pt-rBR.xml",
+                    "source": "/Users/joshuamarotta/.gradle/caches/transforms-1/files-1.1/navigation-ui-1.0.0.aar/d7c8007c159207c0515dbf5a3f78db00/res/values-pt-rBR/values-pt-rBR.xml",
                     "from": {
                         "startLines": "2,3",
                         "startColumns": "4,4",
@@ -72,6 +38,23 @@
                     }
                 },
                 {
+                    "source": "/Users/joshuamarotta/.gradle/caches/transforms-1/files-1.1/MaterialAbout-0.2.3.aar/ea60d14ce4fd4f4bd16f132dce9e83fb/res/values-pt-rBR/values-pt-rBR.xml",
+                    "from": {
+                        "startLines": "2,3,4,5,6,7,8,9,10,11,12,13,14,15,16",
+                        "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",
+                        "startOffsets": "55,119,176,217,256,316,355,422,492,552,627,683,749,813,859",
+                        "endColumns": "63,56,40,38,59,38,66,69,59,74,55,65,63,45,40",
+                        "endOffsets": "114,171,212,251,311,350,417,487,547,622,678,744,808,854,895"
+                    },
+                    "to": {
+                        "startLines": "30,49,50,51,53,125,126,127,130,131,132,134,137,140,141",
+                        "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",
+                        "startOffsets": "3143,5958,6015,6056,6182,12210,12249,12316,12618,12678,12753,12894,13230,13462,13508",
+                        "endColumns": "63,56,40,38,59,38,66,69,59,74,55,65,63,45,40",
+                        "endOffsets": "3202,6010,6051,6090,6237,12244,12311,12381,12673,12748,12804,12955,13289,13503,13544"
+                    }
+                },
+                {
                     "source": "/Users/joshuamarotta/.gradle/caches/transforms-1/files-1.1/support-compat-28.0.0.aar/e98b3db8bbf091f698339a41155d8ae2/res/values-pt-rBR/values-pt-rBR.xml",
                     "from": {
                         "startLines": "2",
@@ -86,6 +69,23 @@
                         "startOffsets": "12960",
                         "endColumns": "100",
                         "endOffsets": "13056"
+                    }
+                },
+                {
+                    "source": "/Users/joshuamarotta/.gradle/caches/transforms-1/files-1.1/play-services-basement-16.2.0.aar/72beca3344fa701cfbaecb6ad246cd6b/res/values-pt-rBR/values.xml",
+                    "from": {
+                        "startLines": "4",
+                        "startColumns": "0",
+                        "startOffsets": "251",
+                        "endColumns": "203",
+                        "endOffsets": "454"
+                    },
+                    "to": {
+                        "startLines": "39",
+                        "startColumns": "4",
+                        "startOffsets": "4377",
+                        "endColumns": "203",
+                        "endOffsets": "4576"
                     }
                 },
                 {

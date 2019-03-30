@@ -4,7 +4,7 @@
             "outputFile": "/Users/joshuamarotta/Github/Android Projects/MetroNote/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-en-rAU/values-en-rAU.xml",
             "map": [
                 {
-                    "source": "/Users/joshuamarotta/.gradle/caches/transforms-1/files-1.1/navigation-ui-1.0.0-beta02.aar/f3fd100a0d65771ca3dec27cd8168c0b/res/values-en-rAU/values-en-rAU.xml",
+                    "source": "/Users/joshuamarotta/.gradle/caches/transforms-1/files-1.1/navigation-ui-1.0.0.aar/d7c8007c159207c0515dbf5a3f78db00/res/values-en-rAU/values-en-rAU.xml",
                     "from": {
                         "startLines": "2,3",
                         "startColumns": "4,4",

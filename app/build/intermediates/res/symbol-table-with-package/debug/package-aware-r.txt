@@ -1562,7 +1562,6 @@ id adjust_width
 id alertTitle
 id all
 id always
-id appBarLayout
 id app_holder
 id app_icon
 id app_name
@@ -1665,6 +1664,7 @@ id end_padder
 id enterAlways
 id enterAlwaysCollapsed
 id eventsFragment
+id events_fragment_no_events_booked_textview
 id events_fragment_recyclerview_item_date_time
 id events_fragment_recyclerview_item_description
 id events_fragment_recyclerview_item_location
@@ -1684,10 +1684,9 @@ id fill_vertical
 id filled
 id fixed
 id forever
+id fragment_events_content_recyclerview
 id fragment_events_tab_layout
 id fragment_events_view_pager
-id fragment_performances_events_recyclerview
-id fragment_practices_events_recyclerview
 id fragment_register_email
 id fragment_verify_phone
 id frameLayout
@@ -1716,7 +1715,6 @@ id homeAsUp
 id homeFragment
 id home_activity_fab
 id horizontal
-id horizontalCalendarView
 id icon
 id icon_frame
 id icon_group
@@ -1809,13 +1807,11 @@ id parent_matrix
 id password
 id password_layout
 id percent
-id performances_events_fragment_no_events_booked_textview
 id phone_button
 id phone_layout
 id phone_number
 id photo
 id pin
-id practices_events_fragment_no_events_booked_textview
 id pressed_state
 id profileFragment
 id profile_fragment_button_image_view
@@ -2056,10 +2052,9 @@ layout fab_speed_dial_bottom
 layout fab_speed_dial_top
 layout fragment_create_event
 layout fragment_events
+layout fragment_events_content
 layout fragment_home
 layout fragment_manage_event
-layout fragment_performance_events
-layout fragment_practice_events
 layout fragment_profile
 layout fragment_search
 layout fui_activity_invisible

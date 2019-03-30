@@ -38,6 +38,23 @@
                     }
                 },
                 {
+                    "source": "/Users/joshuamarotta/.gradle/caches/transforms-1/files-1.1/navigation-ui-1.0.0.aar/d7c8007c159207c0515dbf5a3f78db00/res/values-mn/values-mn.xml",
+                    "from": {
+                        "startLines": "2,3",
+                        "startColumns": "4,4",
+                        "startOffsets": "55,161",
+                        "endColumns": "105,120",
+                        "endOffsets": "156,277"
+                    },
+                    "to": {
+                        "startLines": "48,49",
+                        "startColumns": "4,4",
+                        "startOffsets": "5589,5695",
+                        "endColumns": "105,120",
+                        "endOffsets": "5690,5811"
+                    }
+                },
+                {
                     "source": "/Users/joshuamarotta/.gradle/caches/transforms-1/files-1.1/preference-v7-28.0.0.aar/ce9d37244dd1885f718d8b5782d19fc6/res/values-mn/values-mn.xml",
                     "from": {
                         "startLines": "2,3,4,5",
@@ -55,7 +72,7 @@
                     }
                 },
                 {
-                    "source": "/Users/joshuamarotta/.gradle/caches/transforms-1/files-1.1/play-services-basement-16.1.0.aar/46a204ffb196db02a4c216df42537b8f/res/values-mn/values.xml",
+                    "source": "/Users/joshuamarotta/.gradle/caches/transforms-1/files-1.1/play-services-basement-16.2.0.aar/72beca3344fa701cfbaecb6ad246cd6b/res/values-mn/values.xml",
                     "from": {
                         "startLines": "4",
                         "startColumns": "0",
@@ -69,23 +86,6 @@
                         "startOffsets": "3961",
                         "endColumns": "208",
                         "endOffsets": "4165"
-                    }
-                },
-                {
-                    "source": "/Users/joshuamarotta/.gradle/caches/transforms-1/files-1.1/navigation-ui-1.0.0-beta02.aar/f3fd100a0d65771ca3dec27cd8168c0b/res/values-mn/values-mn.xml",
-                    "from": {
-                        "startLines": "2,3",
-                        "startColumns": "4,4",
-                        "startOffsets": "55,161",
-                        "endColumns": "105,120",
-                        "endOffsets": "156,277"
-                    },
-                    "to": {
-                        "startLines": "48,49",
-                        "startColumns": "4,4",
-                        "startOffsets": "5589,5695",
-                        "endColumns": "105,120",
-                        "endOffsets": "5690,5811"
                     }
                 },
                 {

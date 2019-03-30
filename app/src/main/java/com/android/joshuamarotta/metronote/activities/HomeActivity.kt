@@ -1,7 +1,6 @@
 package com.android.joshuamarotta.metronote.activities
 
 import android.annotation.SuppressLint
-import android.app.Activity
 import android.content.Intent
 import android.os.Bundle
 import android.support.design.bottomnavigation.LabelVisibilityMode
@@ -9,6 +8,7 @@ import android.support.design.internal.NavigationMenu
 import android.support.design.widget.BottomNavigationView
 import android.support.v4.app.Fragment
 import android.support.v7.app.AppCompatActivity
+import android.support.v7.preference.PreferenceManager
 import android.view.Menu
 import android.view.MenuItem
 import android.view.View
@@ -27,15 +27,7 @@ import com.android.joshuamarotta.metronote.interfaces.OnReselectedDelegate
 import io.github.yavski.fabspeeddial.FabSpeedDial
 import io.github.yavski.fabspeeddial.SimpleMenuListenerAdapter
 import kotlinx.android.synthetic.main.activity_home.*
-import android.support.v7.preference.PreferenceManager
-import dagger.android.AndroidInjection
-import dagger.android.AndroidInjector
-import dagger.android.DispatchingAndroidInjector
-import dagger.android.HasActivityInjector
-import dagger.android.support.DaggerAppCompatActivity
-import dagger.android.support.HasSupportFragmentInjector
 import shortbread.Shortcut
-import javax.inject.Inject
 
 class HomeActivity : AppCompatActivity(), CreateEventFragment.CreateEventCallback {
 

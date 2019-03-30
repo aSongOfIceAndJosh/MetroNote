@@ -21,24 +21,7 @@
                     }
                 },
                 {
-                    "source": "/Users/joshuamarotta/.gradle/caches/transforms-1/files-1.1/MaterialAbout-0.2.3.aar/edb171a4bab313efc668de6e2463cafe/res/values-zh-rCN/values-zh-rCN.xml",
-                    "from": {
-                        "startLines": "2,3,4,5,6,7,8,9,10,11,12,13,14,15,16",
-                        "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",
-                        "startOffsets": "55,98,138,179,219,263,299,346,390,431,478,522,563,607,649",
-                        "endColumns": "42,39,40,39,43,35,46,43,40,46,43,40,43,41,43",
-                        "endOffsets": "93,133,174,214,258,294,341,385,426,473,517,558,602,644,688"
-                    },
-                    "to": {
-                        "startLines": "30,49,50,51,53,125,126,127,130,131,132,134,137,140,141",
-                        "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",
-                        "startOffsets": "2854,5200,5240,5281,5402,10036,10072,10119,10367,10408,10455,10577,10887,11086,11128",
-                        "endColumns": "42,39,40,39,43,35,46,43,40,46,43,40,43,41,43",
-                        "endOffsets": "2892,5235,5276,5316,5441,10067,10114,10158,10403,10450,10494,10613,10926,11123,11167"
-                    }
-                },
-                {
-                    "source": "/Users/joshuamarotta/.gradle/caches/transforms-1/files-1.1/navigation-ui-1.0.0-beta02.aar/f3fd100a0d65771ca3dec27cd8168c0b/res/values-zh-rCN/values-zh-rCN.xml",
+                    "source": "/Users/joshuamarotta/.gradle/caches/transforms-1/files-1.1/navigation-ui-1.0.0.aar/d7c8007c159207c0515dbf5a3f78db00/res/values-zh-rCN/values-zh-rCN.xml",
                     "from": {
                         "startLines": "2,3",
                         "startColumns": "4,4",
@@ -52,6 +35,23 @@
                         "startOffsets": "10163,10264",
                         "endColumns": "100,102",
                         "endOffsets": "10259,10362"
+                    }
+                },
+                {
+                    "source": "/Users/joshuamarotta/.gradle/caches/transforms-1/files-1.1/MaterialAbout-0.2.3.aar/ea60d14ce4fd4f4bd16f132dce9e83fb/res/values-zh-rCN/values-zh-rCN.xml",
+                    "from": {
+                        "startLines": "2,3,4,5,6,7,8,9,10,11,12,13,14,15,16",
+                        "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",
+                        "startOffsets": "55,98,138,179,219,263,299,346,390,431,478,522,563,607,649",
+                        "endColumns": "42,39,40,39,43,35,46,43,40,46,43,40,43,41,43",
+                        "endOffsets": "93,133,174,214,258,294,341,385,426,473,517,558,602,644,688"
+                    },
+                    "to": {
+                        "startLines": "30,49,50,51,53,125,126,127,130,131,132,134,137,140,141",
+                        "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",
+                        "startOffsets": "2854,5200,5240,5281,5402,10036,10072,10119,10367,10408,10455,10577,10887,11086,11128",
+                        "endColumns": "42,39,40,39,43,35,46,43,40,46,43,40,43,41,43",
+                        "endOffsets": "2892,5235,5276,5316,5441,10067,10114,10158,10403,10450,10494,10613,10926,11123,11167"
                     }
                 },
                 {
@@ -89,7 +89,7 @@
                     }
                 },
                 {
-                    "source": "/Users/joshuamarotta/.gradle/caches/transforms-1/files-1.1/play-services-basement-16.1.0.aar/46a204ffb196db02a4c216df42537b8f/res/values-zh-rCN/values.xml",
+                    "source": "/Users/joshuamarotta/.gradle/caches/transforms-1/files-1.1/play-services-basement-16.2.0.aar/72beca3344fa701cfbaecb6ad246cd6b/res/values-zh-rCN/values.xml",
                     "from": {
                         "startLines": "4",
                         "startColumns": "0",

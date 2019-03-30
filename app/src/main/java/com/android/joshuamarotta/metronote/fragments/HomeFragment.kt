@@ -1,26 +1,28 @@
 package com.android.joshuamarotta.metronote.fragments
 
 import android.arch.lifecycle.Observer
-import android.arch.lifecycle.ViewModelProviders
 import android.os.Bundle
 import android.support.v4.app.Fragment
 import android.support.v7.widget.LinearLayoutManager
 import android.support.v7.widget.RecyclerView
-import android.view.*
+import android.view.LayoutInflater
+import android.view.View
+import android.view.ViewGroup
 import com.android.joshuamarotta.metronote.R
 import com.android.joshuamarotta.metronote.Utils.KotlinUtils.isSectionVisible
 import com.android.joshuamarotta.metronote.Utils.KotlinUtils.setupActionBar
 import com.android.joshuamarotta.metronote.adapters.HomeFragmentAdapter
 import com.android.joshuamarotta.metronote.interfaces.OnReselectedDelegate
-import com.android.joshuamarotta.metronote.viewmodels.EventViewModel
 import com.android.joshuamarotta.metronote.viewmodels.HomeFragmentViewModel
 import kotlinx.android.synthetic.main.fragment_home.view.*
+import org.koin.android.viewmodel.ext.android.viewModel
 
 
 class HomeFragment : Fragment(), OnReselectedDelegate {
+
     private lateinit var recyclerView: RecyclerView
     private var adapter: HomeFragmentAdapter? = null
-    private lateinit var homeFragmentViewModel: HomeFragmentViewModel
+    private val homeFragmentViewModel: HomeFragmentViewModel by viewModel()
 
     override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?, savedInstanceState: Bundle?): View? {
         val rootView = inflater.inflate(R.layout.fragment_home, container, false)
@@ -34,9 +36,6 @@ class HomeFragment : Fragment(), OnReselectedDelegate {
         super.onActivityCreated(savedInstanceState)
         recyclerView.adapter = adapter
         recyclerView.layoutManager = LinearLayoutManager(context)
-        homeFragmentViewModel = ViewModelProviders.of(this).get(HomeFragmentViewModel::class.java)
-        //eventViewModel.allEvents.observe(this, Observer { events -> events?.let {adapter?.setEvents(it) } })
-        //eventViewModel.dateTimeSortedEvents.observe(this, Observer { events -> events?.let { adapter?.setEvents(it) } })
         homeFragmentViewModel.homeFeedItems.observe(this, Observer { events -> events?.let { adapter?.setEvents(it) } })
 
     }

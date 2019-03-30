@@ -4,43 +4,25 @@ import android.app.Application
 import android.arch.lifecycle.AndroidViewModel
 import android.arch.lifecycle.LiveData
 import android.arch.lifecycle.MutableLiveData
-import com.android.joshuamarotta.metronote.DataBus.RxDataBusEvent
-import com.android.joshuamarotta.metronote.DataBus.RxDataBusImpl
 import com.android.joshuamarotta.metronote.models.EventRoomModel
 import com.android.joshuamarotta.metronote.repositories.EventRepository
-import com.android.joshuamarotta.metronote.roomdatabase.EventRoomDatabase
-import kotlinx.coroutines.*
+import kotlinx.coroutines.CoroutineScope
+import kotlinx.coroutines.Dispatchers
+import kotlinx.coroutines.Job
+import kotlinx.coroutines.launch
 import java.text.SimpleDateFormat
-import java.util.*
-import kotlin.coroutines.CoroutineContext
 
-class EventViewModel(application: Application) : AndroidViewModel(application) {
-    private var parentJob = Job()
-    private val coroutineContext: CoroutineContext
-        get() = parentJob + Dispatchers.Main
-    private val scope = CoroutineScope(coroutineContext)
-    private val repository: EventRepository
-    //val allEvents: LiveData<List<EventRoomModel>>
-    val dateTimeSortedEvents: LiveData<List<EventRoomModel>>
-    val dateTimeSortedPerformances: LiveData<List<EventRoomModel>>
-    val dateTimeSortedPractices: LiveData<List<EventRoomModel>>
-
+class EventViewModel(application: Application, val scope: CoroutineScope, val parentJob: Job, val eventRoomRepository: EventRepository) : AndroidViewModel(application) {
+    val dateTimeSortedEvents: LiveData<List<EventRoomModel>> = eventRoomRepository.dateTimeSortedEvents
+    val dateTimeSortedPerformances: LiveData<List<EventRoomModel>> = eventRoomRepository.dateTimeSortedPerformances
+    val dateTimeSortedPractices: LiveData<List<EventRoomModel>> = eventRoomRepository.dateTimeSortedPractices
     val dateTimeSortedEventsMap = MutableLiveData<MutableMap<String, List<EventRoomModel>>>()
 
-    init {
-        val eventsDao = EventRoomDatabase.getDatabase(application, scope).eventDao()
-        repository = EventRepository(eventsDao)
-        //allEvents = repository.allEvents
-        dateTimeSortedEvents = repository.dateTimeSortedEvents
-        dateTimeSortedPerformances = repository.dateTimeSortedPerformances
-        dateTimeSortedPractices = repository.dateTimeSortedPractices
-    }
+    fun insert(eventRoomModel: EventRoomModel) = scope.launch(Dispatchers.IO) { eventRoomRepository.insert(eventRoomModel) }
 
-    fun insert(eventRoomModel: EventRoomModel) = scope.launch(Dispatchers.IO) { repository.insert(eventRoomModel) }
+    fun delete(eventRoomModel: EventRoomModel) = scope.launch(Dispatchers.IO) { eventRoomRepository.delete(eventRoomModel) }
 
-    fun delete(eventRoomModel: EventRoomModel) = scope.launch(Dispatchers.IO) { repository.delete(eventRoomModel) }
-
-    fun deleteAllEvents() = scope.launch(Dispatchers.IO) { repository.deleteAllEvents() }
+    fun deleteAllEvents() = scope.launch(Dispatchers.IO) { eventRoomRepository.deleteAllEvents() }
 
     override fun onCleared() {
         super.onCleared()

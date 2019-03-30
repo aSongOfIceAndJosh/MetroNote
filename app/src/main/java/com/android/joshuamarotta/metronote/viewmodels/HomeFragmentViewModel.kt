@@ -11,19 +11,8 @@ import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.Job
 import kotlin.coroutines.CoroutineContext
 
-class HomeFragmentViewModel(application: Application) : AndroidViewModel(application) {
-    private var parentJob = Job()
-    private val coroutineContext: CoroutineContext
-        get() = parentJob + Dispatchers.Main
-    private val scope = CoroutineScope(coroutineContext)
-    private val repository: EventRepository
-    val homeFeedItems: LiveData<List<EventRoomModel>>
-
-    init {
-        val eventsDao = EventRoomDatabase.getDatabase(application, scope).eventDao()
-        repository = EventRepository(eventsDao)
-        homeFeedItems = repository.allEvents
-    }
+class HomeFragmentViewModel(application: Application, val parentJob: Job, val eventRoomRepository: EventRepository) : AndroidViewModel(application) {
+    val homeFeedItems: LiveData<List<EventRoomModel>> = eventRoomRepository.allEvents
 
     override fun onCleared() {
         super.onCleared()

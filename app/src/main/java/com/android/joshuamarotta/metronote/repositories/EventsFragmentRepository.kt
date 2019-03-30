@@ -11,10 +11,9 @@ class EventsFragmentRepository {
 
     init {
         viewPagerFragments = MutableLiveData<List<Fragment>>()
-        viewPagerFragments.value = listOf(
-            PerformanceEventsFragment(),
-            PracticeEventsFragment(),
-            PerformanceEventsFragment()
+        viewPagerFragments.value = listOf(PerformanceEventsFragment(),
+            PracticeEventsFragment()
+            //PerformanceEventsFragment()
         )
     }
 }

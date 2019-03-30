@@ -21,7 +21,7 @@
                     }
                 },
                 {
-                    "source": "/Users/joshuamarotta/.gradle/caches/transforms-1/files-1.1/play-services-basement-16.1.0.aar/46a204ffb196db02a4c216df42537b8f/res/values-ky/values.xml",
+                    "source": "/Users/joshuamarotta/.gradle/caches/transforms-1/files-1.1/play-services-basement-16.2.0.aar/72beca3344fa701cfbaecb6ad246cd6b/res/values-ky/values.xml",
                     "from": {
                         "startLines": "4",
                         "startColumns": "0",
@@ -35,23 +35,6 @@
                         "startOffsets": "3947",
                         "endColumns": "220",
                         "endOffsets": "4163"
-                    }
-                },
-                {
-                    "source": "/Users/joshuamarotta/.gradle/caches/transforms-1/files-1.1/navigation-ui-1.0.0-beta02.aar/f3fd100a0d65771ca3dec27cd8168c0b/res/values-ky/values-ky.xml",
-                    "from": {
-                        "startLines": "2,3",
-                        "startColumns": "4,4",
-                        "startOffsets": "55,165",
-                        "endColumns": "109,117",
-                        "endOffsets": "160,278"
-                    },
-                    "to": {
-                        "startLines": "48,49",
-                        "startColumns": "4,4",
-                        "startOffsets": "5594,5704",
-                        "endColumns": "109,117",
-                        "endOffsets": "5699,5817"
                     }
                 },
                 {
@@ -103,6 +86,23 @@
                         "startOffsets": "2802,2910,3091,3222,3331,3535,3664,3809,4168,4396,4505,4686,4818,5014,5211,5305,5395",
                         "endColumns": "107,180,130,108,203,128,144,137,227,108,180,131,195,196,93,89,106",
                         "endOffsets": "2905,3086,3217,3326,3530,3659,3804,3942,4391,4500,4681,4813,5009,5206,5300,5390,5497"
+                    }
+                },
+                {
+                    "source": "/Users/joshuamarotta/.gradle/caches/transforms-1/files-1.1/navigation-ui-1.0.0.aar/d7c8007c159207c0515dbf5a3f78db00/res/values-ky/values-ky.xml",
+                    "from": {
+                        "startLines": "2,3",
+                        "startColumns": "4,4",
+                        "startOffsets": "55,165",
+                        "endColumns": "109,117",
+                        "endOffsets": "160,278"
+                    },
+                    "to": {
+                        "startLines": "48,49",
+                        "startColumns": "4,4",
+                        "startOffsets": "5594,5704",
+                        "endColumns": "109,117",
+                        "endOffsets": "5699,5817"
                     }
                 }
             ]

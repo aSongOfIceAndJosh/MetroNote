@@ -4,23 +4,6 @@
             "outputFile": "/Users/joshuamarotta/Github/Android Projects/MetroNote/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-bn/values-bn.xml",
             "map": [
                 {
-                    "source": "/Users/joshuamarotta/.gradle/caches/transforms-1/files-1.1/navigation-ui-1.0.0-beta02.aar/f3fd100a0d65771ca3dec27cd8168c0b/res/values-bn/values-bn.xml",
-                    "from": {
-                        "startLines": "2,3",
-                        "startColumns": "4,4",
-                        "startOffsets": "55,167",
-                        "endColumns": "111,116",
-                        "endOffsets": "162,279"
-                    },
-                    "to": {
-                        "startLines": "120,121",
-                        "startColumns": "4,4",
-                        "startOffsets": "11868,11980",
-                        "endColumns": "111,116",
-                        "endOffsets": "11975,12092"
-                    }
-                },
-                {
                     "source": "/Users/joshuamarotta/.gradle/caches/transforms-1/files-1.1/play-services-base-16.0.1.aar/7eb5ad8d3961248abdc5e450a1934e72/res/values-bn/values.xml",
                     "from": {
                         "startLines": "4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20",
@@ -89,7 +72,24 @@
                     }
                 },
                 {
-                    "source": "/Users/joshuamarotta/.gradle/caches/transforms-1/files-1.1/play-services-basement-16.1.0.aar/46a204ffb196db02a4c216df42537b8f/res/values-bn/values.xml",
+                    "source": "/Users/joshuamarotta/.gradle/caches/transforms-1/files-1.1/navigation-ui-1.0.0.aar/d7c8007c159207c0515dbf5a3f78db00/res/values-bn/values-bn.xml",
+                    "from": {
+                        "startLines": "2,3",
+                        "startColumns": "4,4",
+                        "startOffsets": "55,167",
+                        "endColumns": "111,116",
+                        "endOffsets": "162,279"
+                    },
+                    "to": {
+                        "startLines": "120,121",
+                        "startColumns": "4,4",
+                        "startOffsets": "11868,11980",
+                        "endColumns": "111,116",
+                        "endOffsets": "11975,12092"
+                    }
+                },
+                {
+                    "source": "/Users/joshuamarotta/.gradle/caches/transforms-1/files-1.1/play-services-basement-16.2.0.aar/72beca3344fa701cfbaecb6ad246cd6b/res/values-bn/values.xml",
                     "from": {
                         "startLines": "4",
                         "startColumns": "0",

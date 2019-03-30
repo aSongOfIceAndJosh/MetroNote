@@ -4,7 +4,7 @@ import android.support.v4.app.Fragment
 import android.support.v4.app.FragmentManager
 import android.support.v4.app.FragmentPagerAdapter
 
-private const val NUM_PAGES = 3
+private const val NUM_PAGES = 2
 
 class EventsFragmentPagerAdapter(fm: FragmentManager): FragmentPagerAdapter(fm) {
     private val fragmentList: ArrayList<Fragment> = arrayListOf()
