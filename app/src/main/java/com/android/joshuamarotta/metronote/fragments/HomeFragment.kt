@@ -15,14 +15,13 @@ import com.android.joshuamarotta.metronote.adapters.HomeFragmentAdapter
 import com.android.joshuamarotta.metronote.interfaces.OnReselectedDelegate
 import com.android.joshuamarotta.metronote.viewmodels.HomeFragmentViewModel
 import kotlinx.android.synthetic.main.fragment_home.view.*
-import org.koin.android.viewmodel.ext.android.viewModel
-
+import org.koin.android.viewmodel.ext.android.sharedViewModel
 
 class HomeFragment : Fragment(), OnReselectedDelegate {
 
     private lateinit var recyclerView: RecyclerView
     private var adapter: HomeFragmentAdapter? = null
-    private val homeFragmentViewModel: HomeFragmentViewModel by viewModel()
+    private val homeFragmentViewModel: HomeFragmentViewModel by sharedViewModel()
 
     override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?, savedInstanceState: Bundle?): View? {
         val rootView = inflater.inflate(R.layout.fragment_home, container, false)

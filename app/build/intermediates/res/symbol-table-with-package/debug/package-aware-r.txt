@@ -1637,6 +1637,7 @@ id custom
 id customPanel
 id dark
 id dashboardFragment
+id dataBinding
 id date_dialog_root
 id decor_content_parent
 id default_activity_button
@@ -1798,6 +1799,8 @@ id normal
 id notification_background
 id notification_main_column
 id notification_main_column_container
+id onAttachStateChangeListener
+id onDateChanged
 id outline
 id packed
 id parallax
@@ -1919,6 +1922,7 @@ id textView2
 id textView5
 id textView50
 id textView8
+id textWatcher
 id text_field_boxes_bottom
 id text_field_boxes_clear_button
 id text_field_boxes_counter

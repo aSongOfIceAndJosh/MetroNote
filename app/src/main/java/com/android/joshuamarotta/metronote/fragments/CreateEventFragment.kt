@@ -3,13 +3,11 @@ package com.android.joshuamarotta.metronote.fragments
 
 import android.app.DatePickerDialog
 import android.app.TimePickerDialog
-import android.arch.lifecycle.ViewModelProviders
 import android.content.Context
 import android.os.Bundle
 import android.support.constraint.ConstraintLayout
 import android.support.v4.app.Fragment
 import android.text.TextUtils
-import android.text.format.DateUtils.formatDateTime
 import android.view.LayoutInflater
 import android.view.Menu
 import android.view.View
@@ -19,10 +17,10 @@ import android.widget.TextView
 import android.widget.Toast
 import androidx.navigation.fragment.findNavController
 import com.afollestad.materialdialogs.MaterialDialog
-import com.android.joshuamarotta.metronote.activities.HomeActivity
 import com.android.joshuamarotta.metronote.R
 import com.android.joshuamarotta.metronote.Utils.KotlinUtils.isSectionVisible
 import com.android.joshuamarotta.metronote.Utils.KotlinUtils.setupActionBar
+import com.android.joshuamarotta.metronote.activities.HomeActivity
 import com.android.joshuamarotta.metronote.interfaces.OnBackPressedListener
 import com.android.joshuamarotta.metronote.interfaces.OnReselectedDelegate
 import com.android.joshuamarotta.metronote.models.EventRoomModel
@@ -33,11 +31,10 @@ import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.firestore.FirebaseFirestore
 import kotlinx.android.synthetic.main.fragment_create_event.*
 import kotlinx.android.synthetic.main.fragment_create_event.view.*
-import shortbread.Shortcut
+import org.koin.android.viewmodel.ext.android.sharedViewModel
 import java.text.SimpleDateFormat
 import java.util.*
 
-//@Shortcut(id = "test", icon = R.drawable.ic_create_event_location, shortLabel = "Add Event",  activity = HomeActivity::class)
 class CreateEventFragment : Fragment(), OnReselectedDelegate, OnBackPressedListener {
 
     private val db = FirebaseFirestore.getInstance()
@@ -48,6 +45,8 @@ class CreateEventFragment : Fragment(), OnReselectedDelegate, OnBackPressedListe
     private lateinit var time: String
     private lateinit var timeView: TextView
     private lateinit var dateView: TextView
+
+    private val eventViewModel: EventViewModel by sharedViewModel()
 
     private var year = now.get(Calendar.YEAR)
     private var month = now.get(Calendar.MONTH)
@@ -102,7 +101,7 @@ class CreateEventFragment : Fragment(), OnReselectedDelegate, OnBackPressedListe
                 .title("Set Schedule")
                 .customView(R.layout.create_event_date_dialog_item, true)
                 .positiveText("OK")
-                .onPositive { _, _ -> /*xml launches appropriate click listeners for dialog*/ }
+                .onPositive { _, _ -> }
                 .show()
         }
 
@@ -149,8 +148,8 @@ class CreateEventFragment : Fragment(), OnReselectedDelegate, OnBackPressedListe
     private fun pushEventToDatabase() {
         //TODO - when the time comes, push event to firebase for following friends and seeing their stuff!
         fun addEventToRoomDatabase(eventRoomModel: EventRoomModel) {
-            val eventVieModel = ViewModelProviders.of(this).get(EventViewModel::class.java)
-            eventVieModel.insert(eventRoomModel)
+            //val eventVieModel = ViewModelProviders.of(this).get(EventViewModel::class.java)
+            eventViewModel.insert(eventRoomModel)
             dismissSoftKeyboard()
             createEventCallback?.displayFloatingActionButton()
             findNavController().navigateUp()
@@ -200,18 +199,8 @@ class CreateEventFragment : Fragment(), OnReselectedDelegate, OnBackPressedListe
     }
 
     private fun formatDateTime(): Date {
-        /*val datePattern = "MM/dd/yyyy"
-        var simpleDateFormat = SimpleDateFormat(datePattern)
-        val date = simpleDateFormat.parse(date)
-
-        val timePattern = "HH:mm a"
-        simpleDateFormat = SimpleDateFormat(timePattern)
-        val time = simpleDateFormat.parse(time)*/
-
-
         val simpleDateFormat = SimpleDateFormat("MM/dd/yyyy HH:mm a")
         return simpleDateFormat.parse("$date $time")
-        //return simpleDateFormat.parse("$date $time")
     }
 
     private fun launchDatePicker() {
