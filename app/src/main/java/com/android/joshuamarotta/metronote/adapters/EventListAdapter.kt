@@ -9,6 +9,8 @@ import android.view.ViewGroup
 import android.widget.TextView
 import com.android.joshuamarotta.metronote.R
 import com.android.joshuamarotta.metronote.models.EventRoomModel
+import com.daimajia.swipe.SwipeLayout
+import kotlinx.android.synthetic.main.events_fragment_event_recyclerview_item.*
 import kotlinx.android.synthetic.main.events_fragment_event_recyclerview_item.view.*
 import java.text.SimpleDateFormat
 
@@ -19,6 +21,7 @@ class EventListAdapter internal constructor(context: Context) : RecyclerView.Ada
     private var events = emptyList<EventRoomModel>() // Cached copy of events
 
     inner class EventViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView) {
+        val swipeLayout: SwipeLayout = itemView.swipeLayout
         val eventTitle: TextView? = itemView.events_fragment_recyclerview_item_title
         val eventDescription: TextView? = itemView.events_fragment_recyclerview_item_description
         val eventLocation: TextView? = itemView.events_fragment_recyclerview_item_location
@@ -28,7 +31,40 @@ class EventListAdapter internal constructor(context: Context) : RecyclerView.Ada
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): EventViewHolder {
         val itemView = inflater.inflate(R.layout.events_fragment_event_recyclerview_item, parent, false)
-        return EventViewHolder(itemView)
+        val eventViewHolder =  EventViewHolder(itemView)
+
+        eventViewHolder.swipeLayout.apply {
+            showMode = SwipeLayout.ShowMode.LayDown
+            swipeLayout.addDrag(SwipeLayout.DragEdge.Left, rootView.bottom_wrapper)
+            swipeLayout.addSwipeListener(object: SwipeLayout.SwipeListener {
+                override fun onOpen(layout: SwipeLayout?) {
+                    //TODO
+                }
+
+                override fun onUpdate(layout: SwipeLayout?, leftOffset: Int, topOffset: Int) {
+                    //TODO
+                }
+
+                override fun onStartOpen(layout: SwipeLayout?) {
+                    //TODO
+                }
+
+                override fun onStartClose(layout: SwipeLayout?) {
+                    //TODO
+                }
+
+                override fun onHandRelease(layout: SwipeLayout?, xvel: Float, yvel: Float) {
+                    //TODO
+                }
+
+                override fun onClose(layout: SwipeLayout?) {
+                    //TODO
+                }
+
+            })
+        }
+
+        return eventViewHolder
     }
 
     override fun onBindViewHolder(holder: EventViewHolder, position: Int) {

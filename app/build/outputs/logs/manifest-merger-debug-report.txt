@@ -57,6 +57,7 @@ MERGED from [com.victor:lib:1.0.4] /Users/joshuamarotta/.gradle/caches/transform
 MERGED from [com.jakewharton.rxbinding2:rxbinding:2.1.1] /Users/joshuamarotta/.gradle/caches/transforms-1/files-1.1/rxbinding-2.1.1.aar/660bdbb1b7c18262f8f497dd0cf6c6d0/AndroidManifest.xml:2:1-8:12
 MERGED from [io.reactivex.rxjava2:rxandroid:2.0.2] /Users/joshuamarotta/.gradle/caches/transforms-1/files-1.1/rxandroid-2.0.2.aar/a9881cbec132cf4ca2330d822eb86184/AndroidManifest.xml:15:1-21:12
 MERGED from [com.github.bumptech.glide:glide:4.7.1] /Users/joshuamarotta/.gradle/caches/transforms-1/files-1.1/glide-4.7.1.aar/dfb19f060f1428183af205e4803d0300/AndroidManifest.xml:2:1-13:12
+MERGED from [com.daimajia.swipelayout:library:1.2.0] /Users/joshuamarotta/.gradle/caches/transforms-1/files-1.1/library-1.2.0.aar/473f172e9967c55269eca6653853fdff/AndroidManifest.xml:2:1-10:12
 MERGED from [android.arch.navigation:navigation-fragment-ktx:1.0.0] /Users/joshuamarotta/.gradle/caches/transforms-1/files-1.1/navigation-fragment-ktx-1.0.0.aar/8c39a54e7374b09e373a31b0271714b5/AndroidManifest.xml:17:1-22:12
 MERGED from [com.github.matthiasrobbers:shortbread:1.0.2] /Users/joshuamarotta/.gradle/caches/transforms-1/files-1.1/shortbread-1.0.2.aar/019d93e65c616f9b4f90b1b6c52b10d2/AndroidManifest.xml:2:1-8:12
 MERGED from [android.arch.persistence.room:runtime:1.1.1] /Users/joshuamarotta/.gradle/caches/transforms-1/files-1.1/runtime-1.1.1.aar/d76b88a1293dd365fac26391d35eb193/AndroidManifest.xml:17:1-22:12
@@ -410,6 +411,8 @@ MERGED from [io.reactivex.rxjava2:rxandroid:2.0.2] /Users/joshuamarotta/.gradle/
 MERGED from [io.reactivex.rxjava2:rxandroid:2.0.2] /Users/joshuamarotta/.gradle/caches/transforms-1/files-1.1/rxandroid-2.0.2.aar/a9881cbec132cf4ca2330d822eb86184/AndroidManifest.xml:19:5-43
 MERGED from [com.github.bumptech.glide:glide:4.7.1] /Users/joshuamarotta/.gradle/caches/transforms-1/files-1.1/glide-4.7.1.aar/dfb19f060f1428183af205e4803d0300/AndroidManifest.xml:7:5-9:41
 MERGED from [com.github.bumptech.glide:glide:4.7.1] /Users/joshuamarotta/.gradle/caches/transforms-1/files-1.1/glide-4.7.1.aar/dfb19f060f1428183af205e4803d0300/AndroidManifest.xml:7:5-9:41
+MERGED from [com.daimajia.swipelayout:library:1.2.0] /Users/joshuamarotta/.gradle/caches/transforms-1/files-1.1/library-1.2.0.aar/473f172e9967c55269eca6653853fdff/AndroidManifest.xml:6:5-8:41
+MERGED from [com.daimajia.swipelayout:library:1.2.0] /Users/joshuamarotta/.gradle/caches/transforms-1/files-1.1/library-1.2.0.aar/473f172e9967c55269eca6653853fdff/AndroidManifest.xml:6:5-8:41
 MERGED from [android.arch.navigation:navigation-fragment-ktx:1.0.0] /Users/joshuamarotta/.gradle/caches/transforms-1/files-1.1/navigation-fragment-ktx-1.0.0.aar/8c39a54e7374b09e373a31b0271714b5/AndroidManifest.xml:20:5-44
 MERGED from [android.arch.navigation:navigation-fragment-ktx:1.0.0] /Users/joshuamarotta/.gradle/caches/transforms-1/files-1.1/navigation-fragment-ktx-1.0.0.aar/8c39a54e7374b09e373a31b0271714b5/AndroidManifest.xml:20:5-44
 MERGED from [com.github.matthiasrobbers:shortbread:1.0.2] /Users/joshuamarotta/.gradle/caches/transforms-1/files-1.1/shortbread-1.0.2.aar/019d93e65c616f9b4f90b1b6c52b10d2/AndroidManifest.xml:6:5-43

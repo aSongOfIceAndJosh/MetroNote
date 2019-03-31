@@ -6,8 +6,6 @@ import android.databinding.ViewDataBinding;
 import android.util.SparseArray;
 import android.util.SparseIntArray;
 import android.view.View;
-import com.android.joshuamarotta.metronote.databinding.FragmentEventsContentBindingImpl;
-import java.lang.IllegalArgumentException;
 import java.lang.Integer;
 import java.lang.Object;
 import java.lang.Override;
@@ -18,12 +16,9 @@ import java.util.HashMap;
 import java.util.List;
 
 public class DataBinderMapperImpl extends DataBinderMapper {
-  private static final int LAYOUT_FRAGMENTEVENTSCONTENT = 1;
-
-  private static final SparseIntArray INTERNAL_LAYOUT_ID_LOOKUP = new SparseIntArray(1);
+  private static final SparseIntArray INTERNAL_LAYOUT_ID_LOOKUP = new SparseIntArray(0);
 
   static {
-    INTERNAL_LAYOUT_ID_LOOKUP.put(com.android.joshuamarotta.metronote.R.layout.fragment_events_content, LAYOUT_FRAGMENTEVENTSCONTENT);
   }
 
   @Override
@@ -33,14 +28,6 @@ public class DataBinderMapperImpl extends DataBinderMapper {
       final Object tag = view.getTag();
       if(tag == null) {
         throw new RuntimeException("view must have a tag");
-      }
-      switch(localizedLayoutId) {
-        case  LAYOUT_FRAGMENTEVENTSCONTENT: {
-          if ("layout/fragment_events_content_0".equals(tag)) {
-            return new FragmentEventsContentBindingImpl(component, view);
-          }
-          throw new IllegalArgumentException("The tag for fragment_events_content is invalid. Received: " + tag);
-        }
       }
     }
     return null;
@@ -86,19 +73,17 @@ public class DataBinderMapperImpl extends DataBinderMapper {
   }
 
   private static class InnerBrLookup {
-    static final SparseArray<String> sKeys = new SparseArray<String>(3);
+    static final SparseArray<String> sKeys = new SparseArray<String>(2);
 
     static {
       sKeys.put(0, "_all");
-      sKeys.put(1, "viewmodel");
     }
   }
 
   private static class InnerLayoutIdLookup {
-    static final HashMap<String, Integer> sKeys = new HashMap<String, Integer>(1);
+    static final HashMap<String, Integer> sKeys = new HashMap<String, Integer>(0);
 
     static {
-      sKeys.put("layout/fragment_events_content_0", com.android.joshuamarotta.metronote.R.layout.fragment_events_content);
     }
   }
 }

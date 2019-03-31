@@ -12,15 +12,15 @@ public final class R {
     public static final class attr {
         private attr() {}
 
-        public static final int ms_arrow_tint = 0x7f0401df;
-        public static final int ms_background_color = 0x7f0401e0;
-        public static final int ms_background_selector = 0x7f0401e1;
-        public static final int ms_dropdown_height = 0x7f0401e2;
-        public static final int ms_dropdown_max_height = 0x7f0401e3;
-        public static final int ms_hide_arrow = 0x7f0401e4;
-        public static final int ms_hint = 0x7f0401e5;
-        public static final int ms_hint_color = 0x7f0401e6;
-        public static final int ms_text_color = 0x7f0401e7;
+        public static final int ms_arrow_tint = 0x7f0401e3;
+        public static final int ms_background_color = 0x7f0401e4;
+        public static final int ms_background_selector = 0x7f0401e5;
+        public static final int ms_dropdown_height = 0x7f0401e6;
+        public static final int ms_dropdown_max_height = 0x7f0401e7;
+        public static final int ms_hide_arrow = 0x7f0401e8;
+        public static final int ms_hint = 0x7f0401e9;
+        public static final int ms_hint_color = 0x7f0401ea;
+        public static final int ms_text_color = 0x7f0401eb;
     }
     public static final class dimen {
         private dimen() {}
@@ -44,10 +44,10 @@ public final class R {
     public static final class id {
         private id() {}
 
-        public static final int fill_parent = 0x7f0a009d;
-        public static final int match_parent = 0x7f0a00eb;
-        public static final int tv_tinted_spinner = 0x7f0a01b5;
-        public static final int wrap_content = 0x7f0a01c3;
+        public static final int fill_parent = 0x7f0a009e;
+        public static final int match_parent = 0x7f0a00ed;
+        public static final int tv_tinted_spinner = 0x7f0a01b9;
+        public static final int wrap_content = 0x7f0a01c7;
     }
     public static final class layout {
         private layout() {}
@@ -57,7 +57,7 @@ public final class R {
     public static final class styleable {
         private styleable() {}
 
-        public static final int[] MaterialSpinner = { 0x7f0401df, 0x7f0401e0, 0x7f0401e1, 0x7f0401e2, 0x7f0401e3, 0x7f0401e4, 0x7f0401e5, 0x7f0401e6, 0x7f0401e7 };
+        public static final int[] MaterialSpinner = { 0x7f0401e3, 0x7f0401e4, 0x7f0401e5, 0x7f0401e6, 0x7f0401e7, 0x7f0401e8, 0x7f0401e9, 0x7f0401ea, 0x7f0401eb };
         public static final int MaterialSpinner_ms_arrow_tint = 0;
         public static final int MaterialSpinner_ms_background_color = 1;
         public static final int MaterialSpinner_ms_background_selector = 2;

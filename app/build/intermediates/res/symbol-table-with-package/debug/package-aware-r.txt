@@ -114,6 +114,7 @@ attr behavior_skipCollapsed
 attr borderWidth
 attr borderlessButtonStyle
 attr bottomAppBarStyle
+attr bottomEdgeSwipeOffset
 attr bottomNavigationStyle
 attr bottomSheetDialogTheme
 attr bottomSheetStyle
@@ -173,6 +174,7 @@ attr chipStrokeColor
 attr chipStrokeWidth
 attr chipStyle
 attr circleCrop
+attr clickToClose
 attr closeIcon
 attr closeIconEnabled
 attr closeIconEndPadding
@@ -252,6 +254,7 @@ attr divider
 attr dividerHorizontal
 attr dividerPadding
 attr dividerVertical
+attr drag_edge
 attr drawableBottomCompat
 attr drawableEndCompat
 attr drawableSize
@@ -439,6 +442,7 @@ attr layout_keyline
 attr layout_optimizationLevel
 attr layout_scrollFlags
 attr layout_scrollInterpolator
+attr leftEdgeSwipeOffset
 attr liftOnScroll
 attr lineHeight
 attr lineSpacing
@@ -591,6 +595,7 @@ attr ratingBarStyle
 attr ratingBarStyleIndicator
 attr ratingBarStyleSmall
 attr reverseLayout
+attr rightEdgeSwipeOffset
 attr ringtonePreferenceStyle
 attr rippleColor
 attr scopeUris
@@ -617,6 +622,7 @@ attr showMotionSpec
 attr showSeekBarValue
 attr showText
 attr showTitle
+attr show_mode
 attr singleChoiceItemLayout
 attr singleLine
 attr singleLineTitle
@@ -746,6 +752,7 @@ attr toolbarStyle
 attr tooltipForegroundColor
 attr tooltipFrameBackground
 attr tooltipText
+attr topEdgeSwipeOffset
 attr touchGuard
 attr touchGuardDrawable
 attr track
@@ -1582,6 +1589,7 @@ id bottom
 id bottom_end
 id bottom_navigation_view
 id bottom_start
+id bottom_wrapper
 id brief
 id browser_actions_header_text
 id browser_actions_menu_item_icon
@@ -1731,6 +1739,7 @@ id item_touch_helper_previous_elevation
 id label
 id labeled
 id largeLabel
+id lay_down
 id left
 id light
 id line1
@@ -1829,6 +1838,7 @@ id progress_circular
 id progress_horizontal
 id progress_msg
 id progress_success_imaage
+id pull_out
 id radio
 id recycler_view
 id recycler_view_home
@@ -1905,6 +1915,7 @@ id sub_title
 id submenuarrow
 id submit_area
 id submit_confirmation_code
+id swipeLayout
 id switchWidget
 id tabMode
 id tag_transition_group
@@ -3148,6 +3159,7 @@ styleable Spinner android_entries android_popupBackground android_prompt android
 styleable StateListDrawable android_dither android_visible android_variablePadding android_constantSize android_enterFadeDuration android_exitFadeDuration
 styleable StateListDrawableItem android_drawable
 styleable SupportVectorDrawablesButton drawableBottomCompat drawableEndCompat drawableStartCompat drawableTopCompat
+styleable SwipeLayout bottomEdgeSwipeOffset clickToClose drag_edge leftEdgeSwipeOffset rightEdgeSwipeOffset show_mode topEdgeSwipeOffset
 styleable SwitchCompat android_textOn android_textOff android_thumb showText splitTrack switchMinWidth switchPadding switchTextAppearance thumbTextPadding thumbTint thumbTintMode track trackTint trackTintMode
 styleable SwitchPreference android_summaryOn android_summaryOff android_disableDependentsState android_switchTextOn android_switchTextOff disableDependentsState summaryOff summaryOn switchTextOff switchTextOn
 styleable SwitchPreferenceCompat android_summaryOn android_summaryOff android_disableDependentsState android_switchTextOn android_switchTextOff disableDependentsState summaryOff summaryOn switchTextOff switchTextOn
