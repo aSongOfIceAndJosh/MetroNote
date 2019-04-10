@@ -7,7 +7,7 @@ It is focused on being a band management tool, allowing for the saving of perfor
 Currently, this project incorporates Android Architecture components such as Navigation, Room/LiveData/ViewModel.
 Additionally, Koin is being integrated for dependency injection.
 
-## Upcoming Features:
+## Upcoming Features
 Incorporate user authentication via Firebase
 Make use of dynamic shortcuts to be available if logged in
 Handle notifications to alert user of upcoming event
